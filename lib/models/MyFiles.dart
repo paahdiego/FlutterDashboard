@@ -16,7 +16,7 @@ class CloudStorageInfo {
   });
 }
 
-List demoMyFiels = [
+List<CloudStorageInfo> demoMyFiles = [
   CloudStorageInfo(
     title: "Documents",
     numOfFiels: 1328,
