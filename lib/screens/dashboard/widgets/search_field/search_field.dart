@@ -25,7 +25,12 @@ class SearchField extends StatelessWidget {
             margin:
                 EdgeInsets.symmetric(horizontal: sizes.defaultPaddingValue / 2),
             padding: EdgeInsets.all(sizes.defaultPaddingValue * 0.75),
-            decoration: BoxDecoration(color: AppColors.primaryColor),
+            decoration: BoxDecoration(
+              color: AppColors.primaryColor,
+              borderRadius: BorderRadius.all(
+                Radius.circular(10),
+              ),
+            ),
             child: SvgPicture.asset(AppIcons.search),
           ),
         ),

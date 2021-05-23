@@ -17,6 +17,9 @@ class AppSizes extends ChangeNotifier {
   double _titleFontSize = 24;
   double _bodyFontSize = 14;
 
+  //BorderRadius
+  BorderRadius _borderRadius = BorderRadius.all(Radius.circular(10));
+
   final BuildContext context;
 
   AppSizes(
@@ -41,7 +44,6 @@ class AppSizes extends ChangeNotifier {
     _safeAreaPadding =
         EdgeInsets.only(top: _paddingTop, bottom: _paddingBottom);
 
-    //_defaultPaddingValue = _displayWidth * 0.1;
     _defaultPadding = EdgeInsets.all(_defaultPaddingValue);
   }
   //ScreenSize
@@ -57,4 +59,6 @@ class AppSizes extends ChangeNotifier {
   double get defaultFontSize => this._defaultFontSize;
   double get titleFontSize => this._titleFontSize;
   double get bodyFontSize => this._bodyFontSize;
+  //BorderRadius
+  BorderRadius get defaultBorderRadius => this._borderRadius;
 }
