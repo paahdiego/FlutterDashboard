@@ -9,7 +9,7 @@ class RecentFile {
   });
 }
 
-List demoRecentFiles = [
+List<RecentFile> demoRecentFiles = [
   RecentFile(
     icon: "assets/icons/xd_file.svg",
     title: "XD File",
