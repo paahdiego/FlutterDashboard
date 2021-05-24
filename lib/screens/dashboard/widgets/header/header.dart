@@ -1,6 +1,5 @@
 import 'package:dashboardtemplate/controllers/MenuController.dart';
 import 'package:dashboardtemplate/core/core.dart';
-import 'package:dashboardtemplate/screens/dashboard/widgets/profile_card/profile_card.dart';
 import 'package:dashboardtemplate/screens/dashboard/widgets/search_field/search_field.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
