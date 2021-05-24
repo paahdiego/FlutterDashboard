@@ -27,14 +27,19 @@ class DashboardScreen extends StatelessWidget {
                     MyFiles(),
                     SizedBox(height: sizes.defaultPaddingValue),
                     RecentFiles(),
+                    if (Responsive.isMobile(context))
+                      SizedBox(height: sizes.defaultPaddingValue),
+                    if (Responsive.isMobile(context)) StorageDetails(),
                   ],
                 ),
               ),
-              SizedBox(width: sizes.defaultPaddingValue),
-              Expanded(
-                flex: 2,
-                child: StorageDetails(),
-              ),
+              if (!Responsive.isMobile(context))
+                SizedBox(width: sizes.defaultPaddingValue),
+              if (!Responsive.isMobile(context))
+                Expanded(
+                  flex: 2,
+                  child: StorageDetails(),
+                ),
             ],
           )
         ],

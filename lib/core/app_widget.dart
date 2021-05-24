@@ -1,7 +1,9 @@
+import 'package:dashboardtemplate/controllers/MenuController.dart';
 import 'package:dashboardtemplate/core/core.dart';
 import 'package:dashboardtemplate/screens/main/main_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class AppWidget extends StatefulWidget {
   @override
@@ -33,9 +35,9 @@ class _AppWidgetState extends State<AppWidget> {
             Theme.of(context).textTheme.apply(bodyColor: AppColors.white)),
         canvasColor: AppColors.secondaryColor,
       ),
-      home: LayoutBuilder(builder: (context, constraints) {
-        return MainScreen();
-      }),
+      home: MultiProvider(providers: [
+        ChangeNotifierProvider(create: (context) => MenuController())
+      ], child: MainScreen()),
     );
   }
 }

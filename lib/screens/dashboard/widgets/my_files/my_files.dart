@@ -36,18 +36,46 @@ class MyFiles extends StatelessWidget {
         SizedBox(
           height: sizes.defaultPaddingValue,
         ),
-        GridView.builder(
-          shrinkWrap: true,
-          itemCount: demoMyFiles.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 4,
-              crossAxisSpacing: sizes.defaultPaddingValue,
-              childAspectRatio: 1.4),
-          itemBuilder: (context, index) {
-            return FileInfoCard(info: demoMyFiles[index]);
-          },
-        )
+        Responsive(
+          mobile: FileInfoCardGridView(
+            crossAxisCount: sizes.displayWidth < 650 ? 2 : 4,
+            aspectRatio: sizes.displayWidth < 650 ? 1.3 : 1,
+          ),
+          tablet: FileInfoCardGridView(),
+          desktop: FileInfoCardGridView(
+            aspectRatio: sizes.displayWidth < 1400 ? 1.1 : 1.4,
+          ),
+        ),
       ],
+    );
+  }
+}
+
+class FileInfoCardGridView extends StatelessWidget {
+  const FileInfoCardGridView({
+    Key? key,
+    this.crossAxisCount = 4,
+    this.aspectRatio = 1,
+  }) : super(key: key);
+
+  final int crossAxisCount;
+  final double aspectRatio;
+
+  @override
+  Widget build(BuildContext context) {
+    AppSizes sizes = AppSizes(context);
+    return GridView.builder(
+      physics: NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      itemCount: demoMyFiles.length,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: crossAxisCount,
+          crossAxisSpacing: sizes.defaultPaddingValue,
+          mainAxisSpacing: sizes.defaultPaddingValue,
+          childAspectRatio: aspectRatio),
+      itemBuilder: (context, index) {
+        return FileInfoCard(info: demoMyFiles[index]);
+      },
     );
   }
 }
