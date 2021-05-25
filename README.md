@@ -2,7 +2,7 @@
 <br />
 <p align="center">
 
-  <img src=".github/chat.svg" alt="FlutterDashboard" width="160">
+  <img src=".github/logo.svg" alt="FlutterDashboard" width="160">
 
 
   <h3 align="center">FlutterDashboard</h3>
@@ -35,20 +35,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About the Project
   <p align="center">
-  <img src=".github/demo2.gif" width="250" alt="Auth Demo">
+  <img src=".github/dashboard.gif" width="250" alt="Dashboard">
   </p>
   </br>
 
-  Flutter Auth Template is a Flutter sample app with the following pages:
-  - Login Page
-  - SignUp Page
-  - Welcome Page
-  - Splash Page
-  - Home Page
-
-  It uses provider to keep track on actual app state and decides what to show on display.
-  
-  Login page has a functional jwt login model using flutter secure storage to keep jwt token.
+  Flutter Dashboard is a Flutter sample app with ...
  
 
 ### Built With
