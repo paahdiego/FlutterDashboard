@@ -35,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About the Project
   <p align="center">
-  <img src=".github/dashboard.gif" width="600" alt="Dashboard">
+  <img src=".github/dashboard.gif" width="800" alt="Dashboard">
   </p>
   </br>
 
