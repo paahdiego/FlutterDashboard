@@ -8,7 +8,7 @@
   <h3 align="center">FlutterDashboard</h3>
 
   <p align="center">
-     Text
+     Responsive Dashboard
     <br />
   </p>
 </p>
@@ -39,7 +39,7 @@
   </p>
   </br>
 
-  Flutter Dashboard is a Flutter sample app with ...
+  Flutter Dashboard is a Flutter sample admin app with responsive layout features made for web and mobile.
  
 
 ### Built With
