@@ -2,7 +2,7 @@
 <br />
 <p align="center">
 
-  <img src=".github/chat.svg" alt="FlutterDashboard" width="160">
+  <img src=".github/logo.png" alt="FlutterDashboard" width="160">
 
 
   <h3 align="center">FlutterDashboard</h3>
