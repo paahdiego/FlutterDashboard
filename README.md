@@ -51,11 +51,11 @@
 
 1. clone this repo.
    ```sh
-   git clone git@github.com:paahdiego/FlutterAuthTemplate.git    
+   git clone git@github.com:paahdiego/FlutterDashboard.git    
    
    ou
    
-   git clone https://github.com/paahdiego/FlutterAuthTemplate.git
+   git clone https://github.com/paahdiego/FlutterDashboard.git
    ```
    
 2. install dependencies:
